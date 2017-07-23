@@ -36,7 +36,6 @@ body {
 
 @media all and (max-width: 965px) {
 	.filemanager {
-		margin: 30px auto 0;
 		padding: 1px;
 	}
 }

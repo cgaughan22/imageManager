@@ -1,8 +1,8 @@
 <?php
 $ds          = DIRECTORY_SEPARATOR;  //1
 
-//$storeFolder = 'files';
-$storeFolder = $_FILES['directory']['tmp_name']; //'files/graphic_images';   //2 //create input in js to send current directory?    //2
+$storeFolder = 'files';
+//$storeFolder = $_FILES['directory']['tmp_name']; //'files/graphic_images';   //2 //create input in js to send current directory?    //2
  
 if (!empty($_FILES)) {
      
