@@ -6,8 +6,16 @@ $dir = "files";
 
 $response = scan($dir);
 
+if (isset($_POST['makeDirectory'])) {
+        echo makeDirectory($_POST['makeDirectory']);
+    }
 
 // This function scans the files folder recursively, and builds a large array
+
+function makeDirectory(){
+    mkdir('files/New_Folder', 0777, true);
+  	scan($dir);
+}
 
 function scan($dir){
 

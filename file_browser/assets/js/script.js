@@ -329,7 +329,11 @@ $(function(){
 
 					fileType = fileType[fileType.length-1];
 
-					icon = '<span class="icon file f-'+fileType+'">.'+fileType+'</span>';
+					if (fileType == "png") {
+                      icon = '<div style="display:inline-block;margin:20px 30px 0px 25px;border-radius:8px;width:60px;height:70px;background-position: center center;background-size: cover; 							background-repeat:no-repeat;background-image: url(' + f.path + ');"></div>';
+                  	} else {
+                      icon = '<span class="icon file f-'+fileType+'">.'+fileType+'</span>';
+                  	};
 
 					var file = $('<li class="files"><a href="'+ f.path+'" title="'+ f.path +'" class="files">'+icon+'<span class="name">'+ name +'</span> <span class="details">'+fileSize+'</span></a></li>');
 					file.appendTo(fileList);
@@ -395,3 +399,13 @@ $(function(){
 
 	});
 });
+
+function createFolder(){
+	$.ajax({ url: 'scan.php',
+         data: {'makeDirectory': '1'},
+         type: 'post',
+         success: function(output) {
+                      alert(output);
+                  }
+});
+}
