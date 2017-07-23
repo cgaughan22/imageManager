@@ -1,0 +1,83 @@
+
+## team-calendar-8273
+	
+
+## August17-Newsletter
+	# SECURE/news/images/clipart/back-to-school.png
+	# SECURE/news/images/food/ham-cheese-muffin.png
+	# SECURE/news/images/clipart/closing-day-suprises.png
+	# SECURE/news/images/clipart/August2017.png
+	# SECURE/news/images/banners/Agosto2017.png
+	# SECURE/news/newsletters/AugustNewsletter17Spanish.pdf
+	# SECURE/news/newsletters/AugustNewsletterAp17Spanish.pdf
+	# SECURE/news/newsletters/AugustNewsletter17.pdf
+	# SECURE/news/newsletters/AugustNewsletterAP17.pdf
+
+
+## images-8271
+
+## phoneburner-8302
+	# SECURE/includes/user/phoneburner.asp
+	# SECURE/client/phoneburner.asp
+	# SECURE/includes/client/ClientSetView.asp
+
+## client-welcome-styles
+	# SECURE/client/CLIENTWELCOME.ASP
+
+## calls-report
+	# SECURE/includes/util/reportsdata.asp
+	# SECURE/includes/util/reportsSql.asp
+
+## add-contact-modal
+	# SECURE/includes/user/navLeft.asp
+    # SECURE/includes/headinc.asp
+    
+    # SECURE/javascript/addclient.js
+    # SECURE/client/addContactModal.html
+    # SECURE/client/SUMMARY.ASP
+    # SECURE/client/CLIENTLIST.ASP
+    # SECURE/email/BombBomb.asp
+    # SECURE/javascript/fullCalendarUtils.js
+    # SECURE/client/client/Default.aspx.cs
+    # SECURE/javascript/categoryModal.js
+    # SECURE/javascript/Category.js
+    # SECURE/javascript/sourceModal.js
+    # SECURE/javascript/Source.js
+    # SECURE/javascript/AddressAutoComplete.js
+    # SECURE/client/client/Category.aspx.cs
+    # SECURE/user/user/Billing.aspx.cs
+    # SECURE/user/billing.asp
+    # SECURE/client/client/AddClient.aspx.cs
+    # SECURE/user/user/Billing.aspx.cs
+
+    # SECURE/client/client/AddClient.aspx
+    # SECURE/client/client/AddClient.aspx.designer.cs
+
+## revaluate
+# SECURE/http/jsonObjectTest.asp
+http/webconnect.asp
+# includes/util/jsonObject.asp
+# includes/user/revaluate_client.asp
+	# SECURE/user/integrationsMenu.asp
+	# SECURE/javascript/app.integrations-controller.js
+	# SECURE/user/user/Default.aspx.cs
+	# App_Code/WiseAgent/Util/ApiMethod.cs
+	# SECURE/includes/util/angularData.asp
+	# SECURE/includes/user/Revaluate.asp
+	# SECURE/includes/user/revaluate_client.asp
+	# SECURE/client/SUMMARY.ASP
+
+	# App_Code/WiseAgent/Util/BillingFunctions.cs
+	# App_Code/WiseAgent/User/Revaluate.cs
+	# SECURE/user/user/Billing.aspx.cs
+	# App_Code/WiseAgent/User/UserBillingInformation.cs
+	# SECURE/client/client/Default.aspx.cs
+	# SECURE/javascript/app.billing.js
+	
+
+## hash-salt-test
+	# SECURE/TOOLS/coltonsTestingGroundBULK.asp
+	# SECURE/register.ASP
+	# SECURE/includes/user/profile.asp
+	# SECURE/login_secure.ASP
+	# SECURE/TOOLS/coltonsTestingGround.asp
