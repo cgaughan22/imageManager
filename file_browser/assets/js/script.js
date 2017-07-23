@@ -400,13 +400,14 @@ $(function(){
 	});
 });
 
-function createFolder(text){
+function createFolder(name){
 	console.log((window.location.hash))
 	$.ajax({ url: 'scan.php',
-         data: {'makeDirectory': '1'},
+         data: {'makeDirectory': window.location.hash,'folderName': name},
          type: 'post',
          success: function(output) {
-                      alert(output);
+         			console.log(output)
+                    location.reload();
                   }
 });
 }

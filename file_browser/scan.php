@@ -7,15 +7,19 @@ $dir = "files";
 $response = scan($dir);
 
 if (isset($_POST['makeDirectory'])) {
-        echo makeDirectory($_POST['makeDirectory']);
-    }
+	$fldName = ($_POST['folderName']);
+	$dir = ($_POST['makeDirectory']);
+	$dir = str_replace("#","",$dir);
+	$dir = str_replace("%2F", "/", $dir);
+	$dir = $dir . "/" . $fldName;
+	echo $dir;
+    echo makeDirectory($dir);
+}
 
 // This function scans the files folder recursively, and builds a large array
 
-function makeDirectory(){
-	$dir = getcwd();
+function makeDirectory($dir){
     mkdir($dir, 0777, true);
-  	scan($dir);
 }
 
 function scan($dir){
