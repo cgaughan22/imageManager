@@ -400,7 +400,8 @@ $(function(){
 	});
 });
 
-function createFolder(){
+function createFolder(text){
+	console.log((window.location.hash))
 	$.ajax({ url: 'scan.php',
          data: {'makeDirectory': '1'},
          type: 'post',

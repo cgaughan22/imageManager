@@ -13,7 +13,8 @@ if (isset($_POST['makeDirectory'])) {
 // This function scans the files folder recursively, and builds a large array
 
 function makeDirectory(){
-    mkdir('files/New_Folder', 0777, true);
+	$dir = getcwd();
+    mkdir($dir, 0777, true);
   	scan($dir);
 }
 
