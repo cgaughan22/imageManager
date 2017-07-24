@@ -4,6 +4,8 @@ $dir = "files";
 
 // Run the recursive function 
 
+//http://php.net/manual/en/function.unlink.php
+
 $response = scan($dir);
 
 if (isset($_POST['makeDirectory'])) {
@@ -13,14 +15,10 @@ if (isset($_POST['makeDirectory'])) {
 	$dir = str_replace("%2F", "/", $dir);
 	$dir = $dir . "/" . $fldName;
 	echo $dir;
-    echo makeDirectory($dir);
+    mkdir($dir, 0777, true);
 }
 
 // This function scans the files folder recursively, and builds a large array
-
-function makeDirectory($dir){
-    mkdir($dir, 0777, true);
-}
 
 function scan($dir){
 

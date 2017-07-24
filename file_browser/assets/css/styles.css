@@ -162,6 +162,21 @@ body {
   top: 5px;
 }
 
+.add-dir {
+	border-radius: 50%;
+	background-color: whitesmoke;
+	height: 60px;
+	width:60px;
+	list-style-type: none;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	cursor: pointer;
+	box-sizing: border-box;
+	transition: 0.3s background-color;
+}
+
 .filemanager .data {
 	margin-top: 60px;
 	z-index: -3;

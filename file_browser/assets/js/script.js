@@ -312,7 +312,7 @@ $(function(){
 						itemsLength = 'Empty';
 					}
 
-					var folder = $('<li class="folders"><a href="'+ f.path +'" title="'+ f.path +'" class="folders">'+icon+'<span class="name">' + name + '</span> <span class="details">' + itemsLength + '</span></a><div onclick="delFolder" class="close-thik"><i class="fa fa-times" aria-hidden="true"></i></div></li>');
+					var folder = $('<li class="folders"><a href="'+ f.path +'" title="'+ f.path +'" class="folders">'+icon+'<span class="name">' + name + '</span> <span class="details">' + itemsLength + '</span></a><div onclick="delFolder()" class="close-thik"><i class="fa fa-times" aria-hidden="true"></i></div></li>');
 					folder.appendTo(fileList);
 				});
 
@@ -414,26 +414,26 @@ function createFolder(name){
 
 function delFile(){
 	console.log("gona del file")
-	var file = $(this).html
-	$.ajax({ url: 'scan.php',
-         data: {'delFile': file},
-         type: 'post',
-         success: function(output) {
-         			console.log(output)
-                    //location.reload();
-                  }
-	});
+	// var file = $(this).html
+	// $.ajax({ url: 'scan.php',
+ //         data: {'delFile': file},
+ //         type: 'post',
+ //         success: function(output) {
+ //         			console.log(output)
+ //                    //location.reload();
+ //                  }
+	// });
 }
 
 function delFolder(){
 	console.log("folder del")
-	var folder = $(this).html
-	$.ajax({ url: 'scan.php',
-         data: {'delFolder': folder},
-         type: 'post',
-         success: function(output) {
-         			console.log(output)
-                    //location.reload();
-                  }
-	});
+	// var folder = $(this).html
+	// $.ajax({ url: 'scan.php',
+ //         data: {'delFolder': folder},
+ //         type: 'post',
+ //         success: function(output) {
+ //         			console.log(output)
+ //                    //location.reload();
+ //                  }
+	// });
 }
