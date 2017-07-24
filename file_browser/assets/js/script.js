@@ -409,5 +409,5 @@ function createFolder(name){
          			console.log(output)
                     location.reload();
                   }
-});
+	});
 }

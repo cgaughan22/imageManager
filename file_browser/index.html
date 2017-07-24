@@ -48,6 +48,20 @@
 	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script src="assets/js/script.js"></script>
 	<script src="assets/js/dropzone/dist/dropzone.js"></script>
+	<script type="text/javascript">
+		Dropzone.autoDiscover = false;
+		$('.dropzone').dropzone ({
+		        url: "upload.php",
+		        init: function() {
+		            this.on("sending", function(file, xhr, formData){
+		                formData.append("directory", window.location.hash)
+		            }),
+		            this.on("success", function(file, xhr){
+		                location.reload();
+		            })
+		        },
+		});
+	</script>
 
 </body>
 </html>
