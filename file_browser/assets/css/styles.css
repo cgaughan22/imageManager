@@ -162,6 +162,12 @@ body {
   top: 5px;
 }
 
+.compensate {
+	position:relative;
+	top:-15px;
+	left:-5px;
+}
+
 .add-dir {
 	border-radius: 50%;
 	background-color: whitesmoke;
