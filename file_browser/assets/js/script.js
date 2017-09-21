@@ -397,7 +397,7 @@ $(function(){
 			return Math.round(bytes / Math.pow(1024, i), 2) + ' ' + sizes[i];
 		}
 
-	});
+	}	);
 });
 
 function createFolder(name){
@@ -414,7 +414,8 @@ function createFolder(name){
 
 function delFile(){
 	console.log("gona del file")
-	// var file = $(this).html
+	var file = $(this).html
+	console.log(file)
 	// $.ajax({ url: 'scan.php',
  //         data: {'delFile': file},
  //         type: 'post',
