@@ -404,7 +404,7 @@ function createFolder() {
 
 function delFile(name) {
     $.ajax({ url: 'scan.php',
-            data: {'delFile': name},
+            data: {'delFile': name,'directory': window.location.hash},
             type: 'post',
             success: function(output) {
             			console.log(output)
@@ -416,7 +416,7 @@ function delFile(name) {
 function delFolder(name) {
     console.log("folder del")
     // $.ajax({ url: 'scan.php',
-    //         data: {'delFolder': name},
+    //         data: {'delFolder': name,'directory': window.location.hash},
     //         type: 'post',
     //         success: function(output) {
     //         			console.log(output)
