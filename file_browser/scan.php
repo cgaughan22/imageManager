@@ -18,15 +18,25 @@ if (isset($_POST['makeDirectory'])) {
     mkdir($dir, 0777, true);
 }
 
-if (isset($_POST['delFile'])) {
-	$file = ($_POST['delFile']);
-	$dir = ($_POST['directory']);
-	$dir = str_replace("#","",$dir);
-	$dir = str_replace("%2F", "/", $dir);
-	$dir = $dir . "/" . $fldName;
-	echo $dir;
-    mkdir($dir, 0777, true);
-}
+// if (isset($_POST['delFile'])) {
+// 	$file = ($_POST['delFile']);
+// 	$dir = ($_POST['directory']);
+// 	$dir = str_replace("#","",$dir);
+// 	$dir = str_replace("%2F", "/", $dir);
+// 	$dir = $dir . "/" . $fldName;
+// 	echo $dir;
+//     mkdir($dir, 0777, true);
+// }
+
+// if (isset($_POST['delFolder'])) {
+// 	$folder = ($_POST['delFolder']);
+// 	$dir = ($_POST['directory']);
+// 	$dir = str_replace("#","",$dir);
+// 	$dir = str_replace("%2F", "/", $dir);
+// 	$dirname = $dir . "/" . $folder;
+// 	echo $dir;
+//     rmdir($dirname)($dir, 0777, true);
+// }
 
 // This function scans the files folder recursively, and builds a large array
 
