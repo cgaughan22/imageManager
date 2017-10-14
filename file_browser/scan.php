@@ -24,8 +24,8 @@ if (isset($_POST['delFile'])) {
 	$dir = str_replace("#","",$dir);
 	$dir = str_replace("%2F", "/", $dir);
 	$filepath = $dir . "/" . $file;
-	echo $dir;
-    unlink($filepath, 0777, true);
+	echo $filepath;
+    unlink($filepath);
 }
 
 if (isset($_POST['delFolder'])) {
@@ -34,8 +34,8 @@ if (isset($_POST['delFolder'])) {
 	$dir = str_replace("#","",$dir);
 	$dir = str_replace("%2F", "/", $dir);
 	$folderpath = $dir . "/" . $folder;
-	echo $dir;
-    rmdir($folderpath)($dir, 0777, true);
+	echo $folderpath;
+    rmdir($folderpath);
 }
 
 // This function scans the files folder recursively, and builds a large array
