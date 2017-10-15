@@ -386,7 +386,6 @@ $(function() {
 });
 
 function createFolder() {
-    console.log((window.location.hash))
     var name = prompt("Folder Name: ","")
     if (name === "") 
     	return

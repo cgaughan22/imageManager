@@ -9,30 +9,28 @@ $dir = "files";
 $response = scan($dir);
 
 if (isset($_POST['makeDirectory'])) {
-	$fldName = ($_POST['folderName']);
-	$dir = ($_POST['makeDirectory']);
+	$fldName = urldecode($_POST['folderName']);
+	$dir = urldecode($_POST['makeDirectory']);
 	$dir = str_replace("#","",$dir);
-	$dir = str_replace("%2F", "/", $dir);
 	$dir = $dir . "/" . $fldName;
+
 	echo $dir;
     mkdir($dir, 0777, true);
 }
 
 if (isset($_POST['delFile'])) {
-	$file = ($_POST['delFile']);
-	$dir = ($_POST['directory']);
+	$file = urldecode($_POST['delFile']);
+	$dir = urldecode($_POST['directory']);
 	$dir = str_replace("#","",$dir);
-	$dir = str_replace("%2F", "/", $dir);
 	$filepath = $dir . "/" . $file;
 	echo $filepath;
     unlink($filepath);
 }
 
 if (isset($_POST['delFolder'])) {
-	$folder = ($_POST['delFolder']);
-	$dir = ($_POST['directory']);
+	$folder = urldecode($_POST['delFolder']);
+	$dir = urldecode($_POST['directory']);
 	$dir = str_replace("#","",$dir);
-	$dir = str_replace("%2F", "/", $dir);
 	$folderpath = $dir . "/" . $folder;
 	echo $folderpath;
     rmdir($folderpath);
