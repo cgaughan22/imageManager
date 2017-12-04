@@ -44,6 +44,10 @@ $(function() {
         // We are using the "input" event which detects cut and paste
         // in addition to keyboard input.
 
+        filemanager.find('.close-thik').on('keyup',function(e) {
+        	console.log("ok")
+        })
+        
         filemanager.find('input').on('input', function(e) {
 
             folders = [];
@@ -114,7 +118,7 @@ $(function() {
                 breadcrumbsUrls.push(nextDir);
             }
 
-            window.location.hash = encodeURIComponent(nextDir);
+            window.location.hash = (nextDir);
             currentPath = nextDir;
         });
 
@@ -299,7 +303,7 @@ $(function() {
                         itemsLength = 'Empty';
                     }
 
-                    var folder = $('<li class="folders"><a href="' + f.path + '" title="' + f.path + '" class="folders">' + icon + '<span id="'+name+'" class="name">' + name + '</span> <span class="details">' + itemsLength + '</span></a><div onclick=\'delFolder("' + name.trim() + '")\' class="close-thik"><i class="fa fa-times" aria-hidden="true"></i></div></li>');
+                    var folder = $('<li class="folders"><a href="' + f.path + '" title="' + f.path + '" class="folders">' + icon + '<span id="'+name+'" class="name">' + name + '</span> <span class="details">' + itemsLength + '</span></a><div onclick=\'delFolder("'+name.trim()+'")\' class="close-thik"><i class="fa fa-times" aria-hidden="true"></i></div></li>');
                     folder.appendTo(fileList);
                 });
 
@@ -402,24 +406,29 @@ function createFolder() {
 }
 
 function delFile(name) {
-    $.ajax({ url: 'scan.php',
-            data: {'delFile': name,'directory': window.location.hash},
-            type: 'post',
-            success: function(output) {
-            			console.log(output)
-                       location.reload();
-                     }
-    });
+	var del = (confirm ("Are you sure you want to delete this file")) ? true : false;
+    if (del) {
+	    $.ajax({ url: 'scan.php',
+	            data: {'delFile': name,'directory': window.location.hash},
+	            type: 'post',
+	            success: function(output) {
+	            			console.log(output)
+	                       location.reload();
+	                     }
+	    });
+	}
 }
 
 function delFolder(name) {
-    console.log("folder del")
-    $.ajax({ url: 'scan.php',
-            data: {'delFolder': name,'directory': window.location.hash},
-            type: 'post',
-            success: function(output) {
-            			console.log(output)
-                     	location.reload();
-                     }
-    });
+	var del = (confirm ("Are you sure you want to delete this folder")) ? true : false;
+    if (del) {
+	    $.ajax({ url: 'scan.php',
+	            data: {'delFolder': name,'directory': window.location.hash},
+	            type: 'post',
+	            success: function(output) {
+	            			console.log(output)
+	                     	location.reload();
+	                     }
+	    });
+	}
 }
