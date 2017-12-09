@@ -9,9 +9,9 @@ var captionText = document.getElementById("caption");
 var span = document.getElementsByClassName("close")[0];
 // var images = document.getElementsByClassName('images');
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+// span.onclick = function() {
+//     modal.style.display = "none";
+// }
 
 function showImgModal(id) {
     // Get the image and insert it inside the modal - use its "alt" text as a caption
@@ -19,6 +19,9 @@ function showImgModal(id) {
     modal.style.display = "block";
     modalImg.src = img.src;
     captionText.innerHTML = img.alt;
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
 }
 
 
