@@ -1,0 +1,107 @@
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Gallery: Fancy Touch Photography</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Raleway" rel="stylesheet">
+
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+	</head>
+
+	<body>
+
+		<script type="text/javascript" src="scriptFancyTouch.js"></script> 
+		
+		<div id="topbar">
+
+			<div id="navigation">
+
+				<label for="show-menu" class="show-menu">MENU</label>
+				<input type="checkbox" id="show-menu" role="button">
+				<ul id="menu">
+					<li>
+						<a href="index.html">HOME</a>
+						<ul class="hidden">
+						</ul>
+					</li>
+					<li>
+						<a href="about.html">ABOUT US</a>
+						<ul class="hidden">
+						</ul>
+					</li>
+					<li>
+						<a href="#">GALLERY</a>
+						<ul class="hidden">
+							<li><a href="nature.html">Nature</a></li>
+							<li><a href="portraits.html">Portraits</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">CONTACT US</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+				</ul>
+
+				<div id="soc" >
+					<div class= "wrapper">
+					  <a class="icon facebook" href="https://www.facebook.com/fancytouchphotography/" target="blank"><span class="zocial-facebook"></span></a>
+					  
+					  <!-- <a class="icon youtube" href="#" target="blank" ><span class="zocial-youtube"></span></a> -->
+					  
+					  <a class="icon email" href="contact.html"  target="blank" ><span class="zocial-email"></span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="welcome"><img id="welcome-img" src="images/fancyTouch1.png">
+			
+		</div>
+
+		
+		<div id="content">
+
+			<div id="photo-column-2">
+				<img id="myImg" class="images" onclick="showImgModal('myImg')" alt=" Bradenton, FL <br> December 2016" src="images/boardwalk.jpg">
+				<img id="myImg5" class="images" onclick="showImgModal('myImg5')" alt=" Denver, Colorado <br> February 2017" src="images/denver-red-moon.png">
+
+				<img id="myImg3" class="images" onclick="showImgModal('myImg3')" alt=" Denver, Colorado <br> February 2017" src="images/denver-fir.png">
+
+				<img id="myImg4" class="images" onclick="showImgModal('myImg4')" alt=" Denver, Colorado <br> February 2017" src="images/denver-bench.png">
+
+				<img id="myImg2" class="images" onclick="showImgModal('myImg2')" alt=" Robinson Preserve - Bradenton, Florida <br> December 2016" src="images/robinsonPreserve.jpg">
+
+				<img id="myImg6" class="images" onclick="showImgModal('myImg6')" alt=" Fort Rosecrans National Cemetary - San Diego, California <br> May 2017" src="images/diego-military-cemetery.png">
+			</div>
+
+
+
+			
+			
+				<!-- The Modal -->
+			<div id="myModal" class="modal">
+		  		<span class="close">×</span>
+		  		<img class="modal-content" id="img01">
+		  		<div id="caption">
+		  		</div>
+			</div>
+		</div>
+
+		<div id="footer">
+				
+			<div class="center">&#169;Fancy Touch Photography&#174;
+			<hr id="footer-hr">Created with the Intent to Inspire</div>
+
+		</div>
+
+		  <script type="text/javascript" src="scriptFancyTouch.js"></script> 
+		  
+	</body>
+</html>

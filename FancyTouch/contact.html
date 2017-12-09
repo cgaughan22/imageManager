@@ -1,0 +1,149 @@
+
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<title>Contact: Fancy Touch</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+
+
+	@media screen and (max-width : 950px) {
+		#welcome{
+			height: 160px !important;
+		}
+		#welcome-img{
+			
+			height: 100px !important;
+			}
+		.recaptcha{
+data-size: compact
+}
+
+	}
+
+	</style>
+
+	<link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Raleway" rel="stylesheet">
+
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+
+</head>
+
+<body>
+	<div id="topbar">
+		<div id="navigation">
+			<label style="margin-bottom:0px;position:fixed; top:0;margin-top:0;"for="show-menu" class="show-menu">MENU</label>
+			<input type="checkbox" id="show-menu" role="button">
+			<ul id="menu">
+				<li>
+					<a href="index.html">HOME</a>
+					<ul class="hidden">
+					</ul>
+				</li>
+				<li>
+					<a href="about.html">ABOUT US</a>
+					<ul class="hidden">
+					</ul>
+				</li>
+				<li>
+					<a href="#">GALLERY</a>
+					<ul class="hidden">
+						<li><a href="nature.html">Nature</a></li>
+						<li><a href="portraits.html">Portraits</a></li>
+					</ul>
+				</li>
+				<li><a style="color:white;background-color:#020420" href="contact.html">CONTACT US</a></li>
+				<li><a href="blog.html">BLOG</a></li>
+				
+			</ul>
+
+			<div id="soc" >
+				<div class= "wrapper">
+				  <a class="icon facebook" href="https://www.facebook.com/fancytouchphotography/" target="blank"><span class="zocial-facebook"></span></a>
+				  
+				  <!-- <a class="icon youtube" href="#" target="blank" ><span class="zocial-youtube"></span></a> -->
+				  
+				  <a class="icon email" href="contact.html"  target="blank" ><span class="zocial-email"></span></a>
+				 </div>
+			</div>
+
+		</div>
+	</div>
+	<div id="welcome" style="height:240px" !important><img id="welcome-img" src="images/fancyTouch1.png">
+		
+	</div>
+
+	
+	
+				
+			
+  
+  	<div style="margin-top:30px; margin-bottom:30px" class="container" id="contact-form">
+        <h1>Let's touch base!</h1>
+
+        
+
+        <form name="contactform" method="post" action="contactEngine.php">
+
+    <fieldset class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Enter your email address">
+        <div id="error3"></div>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </fieldset>
+
+    <fieldset class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" class="form-control" id="subject" name="subject">
+        <div id="error"></div>
+    </fieldset>
+    
+    <fieldset class="form-group">
+        <label for="content">Comment</label>
+        <textarea name="content" class="form-control" id="content" rows="3"></textarea>
+        <div id="error2"></div>
+    </fieldset>
+    
+    
+    <button type="submit" id="submit" value="submit" class="btn btn-primary">Submit</button>
+
+<br></br>
+
+	<div id="recaptcha" class="g-recaptcha" data-sitekey="6LfRFBAUAAAAABO5JCjE5aTG8XndlSLij2WjHVJM"></div>
+
+    </form>
+    </div>
+
+
+					
+			</div>
+			
+			
+		</div>
+
+				
+
+		<div id="footer">
+			
+			<div class="center">&#169;Fancy Touch Photography&#174;
+			<hr id="footer-hr">Created with the Intent to Inspire</div>
+
+
+			</div>
+		</div>
+	</div>	
+	<script type="text/javascript" src="scriptFancyTouch.js"></script> 
+</body>
+</html>

@@ -1,0 +1,482 @@
+/*Social Media*/@import url(http://weloveiconfonts.com/api/?family=zocial);
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+body{
+  /*background: url("http://subtlepatterns.com/patterns/cloth_alike.png") repeat scroll 0% 0% transparent;*/
+}
+
+
+
+#soc{
+float: right;
+  width: auto;
+  height: 54px;
+  position:;
+  margin-top:5px;
+  margin-right: 20px;
+}
+
+.icon{
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  font-size: 1.323em;
+  line-height: 2em;
+  background-color: #cda435;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  /*box-shadow: 0px 3px 0px #bdbdbd, 0px 3px 10px #bababa;*/
+  -webkit-transition:background-color 250ms ease 0s;
+  transition:background-color 250ms ease 0s;
+}
+
+.zocial-facebook{margin-left: -8px}
+
+.icon:hover{
+  background-color: #dedede;
+}
+/*.icon.facebook:hover{background-color: #4986c7;}
+.twitter:hover{background-color: #4cb6e8;}
+.linkedin:hover{background-color: #29a0cc;}
+.youtube:hover{background-color: #a32929;}
+.flickr:hover{background-color: #c257ad;}
+.email:hover{background-color: #d5b120;}*/
+
+a{
+  text-decoration: none;
+}
+
+.icon:hover{
+  color: #fff;
+  /*box-shadow: 0px 3px 0px #686868, 0px 3px 10px #7e7e7e;*/
+}
+
+.icon:active{
+  box-shadow: inset 0px 1px 4px #3d3d3d, 0px 0px 0px #bdbdbd;
+  top: 3px;
+}
+/*End Social Media*/
+
+
+
+
+/*Strip the ul of padding and list styling*/
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+li {
+	display:inline-block;
+	float: left;
+	
+}
+
+/*Style for menu links*/
+li a {
+	display:block;
+	min-width:126px;
+	height: 54px;
+	text-align: center;
+	line-height: 54px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #020420;
+	background: white;
+	text-decoration: none;
+	font-size: 14px;
+	letter-spacing:.5px;
+}
+
+/*Hover state for top level links*/
+li:hover a {
+	background: #020420;
+	color: white;
+}
+
+/*Style for dropdown links*/
+li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+	
+}
+
+/*Hover state for dropdown links*/
+li:hover ul a:hover {
+	background: #CCCCCC;
+	color: #020420;
+}
+
+/*Hide dropdown links until they are needed*/
+li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 12px ;
+}
+
+/*Display the dropdown on hover*/
+ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: black;
+	background: white;
+	text-align: center;
+	padding: 0px;
+	display: none;
+	letter-spacing: 2px;
+	font-weight: bold;
+	height: 54px;
+	line-height: 75px;
+}
+
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+    -webkit-appearance: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 950px){
+	/*Make dropdown links appear inline*/
+	ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	li {
+		margin-bottom: ;
+	}
+	/*Make all menu links full width*/
+	ul li, li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+
+
+	#soc {
+float: right;
+  width: auto;
+  height: 60px;
+  position:;
+  margin-top:20px;
+  margin-right: 20px;
+	}
+
+	#welcome-img{
+			
+			height: 100px !important;
+		}
+	#welcome{
+	height: 100px !important;
+	}
+
+	.icon{
+  display: block;
+  margin-top: 5px;
+	}
+
+	
+}
+	
+		html {
+  			overflow-y: scroll;
+			}
+
+		body{
+				margin: 0;
+				padding: 0;
+				height: ;
+				background-color: #dedede;
+			}
+
+		hr{
+				width: 55%;
+				margin-bottom: 5px;
+				margin-top: 5px;
+			}
+
+		
+		#welcome-img{
+			width: auto;
+			height: 180px;
+
+		}
+
+		#navigation{
+			width:100%;
+			height: 54px;
+			background-color: white;
+			position: fixed;
+			top:0;
+			z-index: 1;
+		}
+
+
+			
+			#welcome{
+				font-family: 'Bilbo Swash Caps';
+				height: 180px;
+				text-align: center; ;
+				color: white;
+				font-size: 100px;
+				background-color:#020420 ;
+				letter-spacing: 18px;
+				white-space: nowrap;
+  				overflow: hidden;
+  				width: 100%;
+  				margin-right: -18px;
+  				padding-top: 60px;
+			}
+			#welcome-span{
+				font-family: helvetica, arial; 
+				font-size: 30px;
+				letter-spacing: 30px;
+				margin-right: -30px;
+
+			}
+
+			#content-welcome{
+				background-color: black;
+
+			}
+
+			#content{
+				font-family: "Raleway";
+				background-color: #dedede;
+				height: auto ;
+				text-align: center;
+				padding-top: 40px;
+				padding-bottom: 40px;
+				display: block;
+
+			}
+
+			.content{
+				width: auto;
+				height: auto;
+				text-align: center;
+				font-family: helvetica, arial;
+				font-size: bolder;
+				letter-spacing: 5px;r n
+				font-size: 30px;
+				margin: 0;
+				padding-bottom: 20px;
+				z-index:0;
+				}
+
+
+
+			#blog-column{
+
+				width: 100%;
+				background-color: white;
+				text-align: left;
+				border-style: solid;
+				border-color: black;
+				padding:10px;
+			}
+			
+			.contentText{
+				width: 75%;
+				text-align: center;
+				display: block;
+				margin: auto;
+
+			}
+
+			.blog-image{
+				
+				width: 50% !important;
+				max-width: 500px;
+				height: auto;
+				display: block;
+				text-align: center;
+				margin: auto;
+				margin-top: 20px;
+			}
+			h3{
+				margin: 0;
+				padding-top: px;
+			}
+
+			#footer{
+				height: text;
+				background-color:#020420;
+				margin: ;
+				text-align:center;
+				font-family: 'Bilbo Swash Caps';
+				color: white;
+				padding-top:10px;
+				padding-bottom: 10px;
+				position: absolute;
+				bottom: 0,0;
+				width: 100%;
+				z-index:0;
+				
+			}
+
+			
+			#footer-hr{
+				width: 175px;
+				background:white;
+				z-index:1;
+			}
+
+			#tag-line{
+				font-family: 'Bilbo Swash Caps';
+				font-size: 24;
+				padding:20px;
+				float: right;
+				background-color:   ;
+				letter-spacing: 2px;
+				font-weight: ;
+				color: white;
+			}
+
+			{
+
+			}
+
+			#contact-form{
+             width:50%;
+             text-align: center;
+			 background-color:white;
+			 padding:10px;
+			 border-radius:10px;
+			 margin-top:;
+         }
+
+			.input{
+				margin: 5px;
+				border-radius: 2px;
+				float: left;
+			}
+.images{
+	max-width:500px;
+	border-radius: 5px;
+	margin: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.images:hover{opacity: 0.7;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+    from {transform: scale(0.1)}
+    to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
