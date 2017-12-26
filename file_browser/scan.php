@@ -1,11 +1,3 @@
-<?php
-
-$dir = "files";
-
-// Run the recursive function 
-
-//http://php.net/manual/en/function.unlink.php
-
 $response = scan($dir);
 
 if (isset($_POST['makeDirectory'])) {

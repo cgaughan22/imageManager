@@ -393,7 +393,7 @@ function createFolder() {
     var name = prompt("Folder Name: ","")
     if (name === "") 
     	return
-    $
+    
     $.ajax({
         url: 'scan.php',
         data: { 'makeDirectory': window.location.hash, 'folderName': name },
