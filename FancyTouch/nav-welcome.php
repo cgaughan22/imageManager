@@ -4,24 +4,24 @@
 		<input type="checkbox" id="show-menu" role="button">
 		<ul id="menu">
 			<li>
-				<a href="index.html">HOME</a>
+				<a href="index.php">HOME</a>
 				<ul class="hidden">
 				</ul>
 			</li>
 			<li>
-				<a href="about.html">ABOUT US</a>
+				<a href="about.php">ABOUT US</a>
 				<ul class="hidden">
 				</ul>
 			</li>
 			<li>
 				<a href="#">GALLERY</a>
 				<ul class="hidden">
-					<li><a href="nature.html">Nature</a></li>
-					<li><a href="portraits.html">Portraits</a></li>
+					<li><a href="nature.php">Nature</a></li>
+					<li><a href="portraits.php">Portraits</a></li>
 				</ul>
 			</li>
-			<li><a href="contact.html">CONTACT US</a></li>
-			<li><a href="blog.html">BLOG</a></li>
+			<li><a href="contact.php">CONTACT US</a></li>
+			<li><a href="blog.php">BLOG</a></li>
 		</ul>
 
 		<div id="soc" >
@@ -30,7 +30,7 @@
 			  
 			  <!-- <a class="icon youtube" href="#" target="blank" ><span class="zocial-youtube"></span></a> -->
 			  
-			  <a class="icon email" href="contact.html"  target="blank" ><span class="zocial-email"></span></a>
+			  <a class="icon email" href="contact.php"  target="blank" ><span class="zocial-email"></span></a>
 			</div>
 		</div>
 	</div>

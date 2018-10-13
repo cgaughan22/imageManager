@@ -2,12 +2,8 @@
 <html lang="en">
 
 	<head>
-		<meta charset="UTF-8">
-
 		<title>Gallery: Fancy Touch Photography</title>
-
 		<?php include 'globalHead.php';?>
-
 	</head>
 
 	<body>
@@ -28,15 +24,9 @@
 
 				<img id="myImg6" class="images" onclick="showImgModal('myImg6')" alt=" Fort Rosecrans National Cemetary - San Diego, California <br> May 2017" src="images/diego-military-cemetery.png">
 			</div>
-				<!-- The Modal -->
-			<div id="myModal" class="modal">
-		  		<span class="close">×</span>
-		  		<img class="modal-content" id="img01">
-		  		<div id="caption">
-		  		</div>
-			</div>
 		</div>
-
+				<!-- The Modal -->
+		<?php include 'modal.php';?>
 		<?php include 'footer.php';?>
 	</body>
 </html>
